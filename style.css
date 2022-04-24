@@ -138,11 +138,11 @@ h2 {
 }
 
 h3 {
-    font-family: rig-solid-bold-outline, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 3rem;
-  }
+  font-family: rig-solid-bold-outline, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+}
 
 .container {
   display: flex;
@@ -163,9 +163,9 @@ h3 {
 }
 
 .main-info p {
-    text-align: center;
-    line-height: 1.5;
-    padding: 0 5rem;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 5rem;
 }
 
 .card {
@@ -267,28 +267,40 @@ h3 {
 /* FOOTER STUFF */
 
 footer {
-    display: flex;
-    justify-content: center;
+  padding: 0 3rem;
+  /* border: 1px solid white; */
 }
 
 .insta {
-    display: flex;
-    align-items: center;
-    font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  /* border: 1px solid blue; */
 }
 
 .insta a {
-    text-decoration: 5px solid underline;
-    text-underline-offset: 1.1rem;
+  text-decoration: 5px solid underline;
+  text-underline-offset: 1.1rem;
 }
 
 .insta a:hover {
-    font-family: rig-solid-bold-reverse, sans-serif;
-    cursor: pointer;
-  }
+  font-family: rig-solid-bold-reverse, sans-serif;
+  cursor: pointer;
+}
 
 i {
-    padding: 0 1rem;
+  padding: 0 1.3rem;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+
 }
 
 .fade-in {
