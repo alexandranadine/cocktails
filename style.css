@@ -137,6 +137,13 @@ h2 {
   font-size: 3rem;
 }
 
+h3 {
+    font-family: rig-solid-bold-outline, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+  }
+
 .container {
   display: flex;
   justify-content: center;
@@ -255,6 +262,32 @@ h2 {
 .info-text button:hover {
   color: var(--primary-color);
   background-color: var(--offwhite);
+}
+
+/* FOOTER STUFF */
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.insta {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.insta a {
+    text-decoration: none;
+}
+
+.insta a:hover {
+    font-family: rig-solid-bold-reverse, sans-serif;
+    cursor: pointer;
+  }
+
+i {
+    padding: 0 1rem;
 }
 
 .fade-in {
