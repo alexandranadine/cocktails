@@ -1,16 +1,39 @@
 const header = document.querySelector("header");
 const heroSection = document.querySelector(".hero");
-let options = {};
+const faders = document.querySelectorAll(".fade-in");
+const navOptions = {};
+const appearOptions = {
+    threshold: 1,
+    rootMargin: '0px 0px 100px 0px'
+};
 
-const observer = new IntersectionObserver(function (entries, observeHero) {
-    entries.forEach(entry => {
-        if(!entry.isIntersecting) {
-            header.classList.add('nav-onscroll');
-        } else {
-            header.classList.remove('nav-onscroll');
-        }
-    })
+const navObserver = new IntersectionObserver(function (entries, navObserver) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      header.classList.add("nav-onscroll");
+    } else {
+      header.classList.remove("nav-onscroll");
+    }
+  });
+}, navOptions);
+
+navObserver.observe(heroSection);
+
+const appearOnScroll = new IntersectionObserver(function (
+  entries,
+  appearOnScroll
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
 },
-options);
+appearOptions);
 
-observer.observe(heroSection);
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+});

@@ -137,7 +137,6 @@ li a:hover::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid darkcyan; */
 }
 
 .info {
@@ -149,7 +148,6 @@ li a:hover::before {
   padding: 6.5rem 2rem;
   height: 40vh;
   width: 80vw;
-  /* border: 1px solid white; */
 }
 
 .card {
