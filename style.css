@@ -278,7 +278,8 @@ footer {
 }
 
 .insta a {
-    text-decoration: none;
+    text-decoration: 5px solid underline;
+    text-underline-offset: 1.1rem;
 }
 
 .insta a:hover {
