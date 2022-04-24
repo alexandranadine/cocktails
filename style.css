@@ -27,7 +27,7 @@ a {
   align-items: center;
   border-bottom: 1px solid white;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5) url("/img/bar1.jpg");
+  background: rgba(0, 0, 0, 0.5) url("img/bar1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -195,14 +195,14 @@ h2 {
 }
 
 .drinks-info-img {
-  background: rgba(0, 0, 0, 0.5) url("/img/bar3.jpg");
+  background: rgba(0, 0, 0, 0.5) url("img/bar3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .food-info-img {
-  background: rgba(0, 0, 0, 0.5) url("/img/bar4.jpg");
+  background: rgba(0, 0, 0, 0.5) url("img/bar4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -210,7 +210,7 @@ h2 {
 }
 
 .event-info-img {
-  background: rgba(0, 0, 0, 0.5) url("/img/bar2.jpg");
+  background: rgba(0, 0, 0, 0.5) url("img/bar2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
