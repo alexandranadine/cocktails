@@ -25,7 +25,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5) url("/img/bar1.jpg");
   background-repeat: no-repeat;
@@ -145,20 +145,97 @@ li a:hover::before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 1.5rem 0 0 0;
   padding: 6.5rem 2rem;
   height: 40vh;
+  width: 80vw;
   /* border: 1px solid white; */
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  background: rgba(70, 70, 70, 0.26);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-blend-mode: darken;
+  margin: 1.5rem 0 0 0;
+  height: 40vh;
+  width: 80vw;
+  border: 2px solid black;
+  overflow: hidden;
+}
+
+.card:last-child {
+  margin-bottom: 3rem;
+}
+
+.drinks-info-img,
+.food-info-img,
+.event-info-img {
+  flex: 45%;
+  transition: all 250ms ease-in;
+
+}
+
+.drinks-info-img:hover,
+.food-info-img:hover,
+.event-info-img:hover {
+  transform: scale(1.04) rotate(-1deg);
+
+}
+
+.drinks-info-img {
+  background: rgba(0, 0, 0, 0.5) url("/img/bar3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.food-info-img {
+  background: rgba(0, 0, 0, 0.5) url("/img/bar4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.event-info-img {
+  background: rgba(0, 0, 0, 0.5) url("/img/bar2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.info-text {
+  align-self: center;
 }
 
 h1 {
   font-family: rig-solid-bold-outline, sans-serif;
   font-weight: 700;
   font-style: normal;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: rig-solid-bold-reverse, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 3rem;
+  padding: 0.1rem 1rem;
 }
 
 p {
   font-size: 1.2rem;
   padding: 0.1rem 1rem;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
 }
