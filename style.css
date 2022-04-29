@@ -4,6 +4,7 @@
   --primary-color: peru;
   --primary-color-light: #eba866;
   --darkgrey: #252525;
+  --darkergrey: #161616;
   --offwhite: #eedcc9;
 }
 
@@ -299,11 +300,73 @@ li a:hover::before {
   background-color: var(--offwhite);
 }
 
-/* FOOTER STUFF */
+/* -----------------------------------MODAL STYLES----------------------------- */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 2px solid rgb(68, 68, 68);
+  border-radius: 1rem;
+  z-index: 1000;
+  background-color: #252525;
+  width: 60vw;
+  height: 80vh;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  /* border-bottom: 1px solid var(--darkergrey); */
+}
+
+.modal-header .modal-title h2 {
+  font-family: rig-solid-bold-outline, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-header .close-button {
+  font-family: rig-solid-bold-reverse, sans-serif;
+  font-size: 4rem;
+  padding: 0;
+  margin: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 0.8rem 1rem;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* -----------------------------FOOTER STUFF ----------------------------------- */
 
 footer {
   padding: 0 3rem;
-  /* border: 1px solid white; */
 }
 
 .insta {
@@ -311,7 +374,6 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 3rem;
-  /* border: 1px solid blue; */
 }
 
 .insta a {
@@ -331,7 +393,6 @@ i {
 .footer-info {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   margin-bottom: 3rem;
   font-size: 1.2rem;
