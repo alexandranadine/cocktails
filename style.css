@@ -16,6 +16,9 @@ body {
   font-family: proxima-nova, sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: .5px;
 }
 
 a {
@@ -41,6 +44,16 @@ h3 {
   font-weight: 700;
   font-style: normal;
   font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: var(--primary-color);
+}
+h5 {
+  margin:0;
 }
 
 /* ----------------------------- HERO & LOGO --------------------------------------- */
@@ -75,7 +88,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 997;
   transition: background 250ms ease-in;
 }
 
@@ -170,7 +183,6 @@ li a:hover::before {
 
 .main-info p {
   text-align: center;
-  line-height: 1.5;
   padding: 0 1rem;
   width: 70%;
 }
@@ -241,7 +253,7 @@ li a:hover::before {
   grid-column: 4/6;
   grid-row: 1/3;
   padding: 0 1rem;
-  transition: transform 500ms ease-in-out;
+  /* transition: transform 500ms ease-in-out; */
   /* width: 100%;
   height: 100%; */
 }
@@ -252,16 +264,16 @@ li a:hover::before {
   grid-column: 1/3;
   grid-row: 1/3;
   padding: 0 1rem;
-  transition: transform 500ms ease-in-out;
+  /* transition: transform 500ms ease-in-out; */
 }
 
-.info-text:hover {
+/* .info-text:hover {
   transform: translateX(-1rem);
 }
 
 .info-text-inverse:hover {
   transform: translateX(1rem);
-}
+} */
 
 .info-text h2,
 .info-text-inverse h2 {
@@ -309,11 +321,13 @@ li a:hover::before {
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
   border: 2px solid rgb(68, 68, 68);
+  background-color: var(--background-color);
+  background-image: url("img/blacktexbg.jpg");
   border-radius: 1rem;
-  z-index: 1000;
-  background-color: #252525;
+  z-index: 999;
   width: 60vw;
   height: 80vh;
+  overflow: scroll;
 }
 
 .modal.active {
@@ -328,6 +342,7 @@ li a:hover::before {
   /* border-bottom: 1px solid var(--darkergrey); */
 }
 
+
 .modal-header .modal-title h2 {
   font-family: rig-solid-bold-outline, sans-serif;
   padding: 0;
@@ -337,9 +352,11 @@ li a:hover::before {
 .modal-header .close-button {
   font-family: rig-solid-bold-reverse, sans-serif;
   font-size: 4rem;
+  color: white;
   padding: 0;
   margin: 0;
   background: none;
+  border: none;
   cursor: pointer;
 }
 
@@ -354,13 +371,15 @@ li a:hover::before {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  transition: 200ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.7);
   pointer-events: none;
 }
 
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+  z-index: 998;
 }
 
 /* -----------------------------FOOTER STUFF ----------------------------------- */

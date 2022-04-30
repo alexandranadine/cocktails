@@ -16,8 +16,7 @@
 
     <main>
 
-        <!------------------------------NAV AND HERO------------------------------>
-
+        <!------------------------------ NAV AND HERO ------------------------------>
         <header>
             <nav class="nav-list">
                 <ul>
@@ -35,8 +34,7 @@
             </div>
         </div>
 
-        <!------------------------INFO ABOUT ESTABLISHMENT------------------------>
-
+        <!------------------------ INFO ABOUT ESTABLISHMENT ------------------------>
         <section class="container">
             <div class="main-info fade-in">
                 <h1>Eats drinks music art</h1>
@@ -49,8 +47,7 @@
             </div>
         </section>
 
-        <!------------------------------DRINKS CARD------------------------------>
-
+        <!------------------------------ DRINKS CARD ------------------------------>
         <section class="container">
             <div class="card fade-in">
                 <div class="drinks-info-img">
@@ -59,29 +56,12 @@
                 <div class="info-text">
                     <h2>Handcrafted Cocktails</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, labore?</p>
-                    <button>Drinks Menu</button>
-                    <div class="modal" id="modal-drinks">
-                        <div class="modal-header">
-                            <div class="modal-title">
-                                <h2>Drinks Menu</h2>
-                            </div>
-                            <button class="close-button">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore repellat sed voluptatibus
-                            nesciunt nemo nisi vero quia voluptates distinctio necessitatibus iure corporis nihil et
-                            atque rerum esse vel est aut iste, rem alias non perferendis voluptate omnis. Laboriosam
-                            repudiandae expedita unde, perspiciatis vitae reiciendis itaque rerum? Qui veritatis
-                            perspiciatis suscipit?
-                        </div>
-                    </div>
-                    <div id="overlay"></div>
+                    <button data-modal-target="#modal-drinks">Drinks Menu</button>
                 </div>
             </div>
         </section>
 
-        <!------------------------------FOOD CARD------------------------------>
-
+        <!------------------------------ FOOD CARD ------------------------------>
         <section class="container">
             <div class="card fade-in">
                 <div class="food-info-img">
@@ -90,30 +70,13 @@
                 <div class="info-text-inverse">
                     <h2>Damn Good Eats</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, labore?</p>
-                    <button>Food Menu</button>
-                    <div class="modal" id="modal-food">
-                        <div class="modal-header">
-                            <div class="modal-title">
-                                <h2>Drinks Menu</h2>
-                            </div>
-                            <button class="close-button">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore repellat sed voluptatibus
-                            nesciunt nemo nisi vero quia voluptates distinctio necessitatibus iure corporis nihil et
-                            atque rerum esse vel est aut iste, rem alias non perferendis voluptate omnis. Laboriosam
-                            repudiandae expedita unde, perspiciatis vitae reiciendis itaque rerum? Qui veritatis
-                            perspiciatis suscipit?
-                        </div>
-                    </div>
-                    <div id="overlay"></div>
+                    <button data-modal-target="#modal-food">Food Menu</button>
                 </div>
 
             </div>
         </section>
 
-        <!------------------------------EVENTS CARD------------------------------>
-
+        <!------------------------------ EVENTS CARD ------------------------------>
         <section class="container">
             <div class="card fade-in">
                 <div class="event-info-img">
@@ -122,29 +85,12 @@
                 <div class="info-text">
                     <h2>Events for everyone</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, labore?</p>
-                    <button>Upcoming Events</button>
-                    <div class="modal" id="modal-events">
-                        <div class="modal-header">
-                            <div class="modal-title">
-                                <h2>Events Coming Up</h2>
-                            </div>
-                            <button class="close-button">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore repellat sed voluptatibus
-                            nesciunt nemo nisi vero quia voluptates distinctio necessitatibus iure corporis nihil et
-                            atque rerum esse vel est aut iste, rem alias non perferendis voluptate omnis. Laboriosam
-                            repudiandae expedita unde, perspiciatis vitae reiciendis itaque rerum? Qui veritatis
-                            perspiciatis suscipit?
-                        </div>
-                    </div>
-                    <div id="overlay"></div>
+                    <button data-modal-target="#modal-events">Upcoming Events</button>
                 </div>
             </div>
         </section>
 
-        <!------------------------------FOOTER INFO------------------------------>
-
+        <!------------------------------ FOOTER INFO ------------------------------>
         <footer class="container">
             <div class="fade-in">
                 <div class="insta">
@@ -160,6 +106,83 @@
         </footer>
 
     </main>
+
+    <!------------------------------ MODALS ------------------------------>
+    <div class="modal" id="modal-drinks">
+        <div class="modal-header">
+            <div class="modal-title">
+                <h2>Drinks Menu</h2>
+            </div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <h4>Drink Name</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h4>Drink Name</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h4>Drink Name</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h4>Drink Name</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h4>Drink Name</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+    <div class="modal" id="modal-food">
+        <div class="modal-header">
+            <div class="modal-title">
+                <h2>Food Menu</h2>
+            </div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <h4>Food Name</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h4>Food Name</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h4>Food Name</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h4>Food Name</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h4>Food Name</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h4>Food Name</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h4>Food Name</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h4>Food Name</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h4>Food Name</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+    <div class="modal" id="modal-events">
+        <div class="modal-header">
+            <div class="modal-title">
+                <h2>Events Coming Up</h2>
+            </div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <h4>Art Crawl</h4>
+            <h5>May 05, 2022</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, ex.</p>
+            <h4>Art Crawl</h4>
+            <h5>May 05, 2022</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, ex.</p>
+            <h4>Art Crawl</h4>
+            <h5>May 05, 2022</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, ex.</p>
+            <h4>Art Crawl</h4>
+            <h5>May 05, 2022</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, ex.</p>
+        </div>
+    </div>
+    <div id="overlay"></div>
 
     <script src="app.js"></script>
 
